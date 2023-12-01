@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f4f4f4;
+  padding: 60px;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  background-color: white;
+  padding: 26px 60px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.01);
+  border-radius: 8px;
+}
+.header__menu {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 60px;
+  padding: 30px 190px;
+  background: #444444;
+  border-radius: 0px 8px 8px 0px;
+}
+.header__menu li a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+.products__content {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.01);
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 50px 70px;
+}
+.products__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.check__also {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0c1014;
+}
+.see__al {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  color: #1890ff;
+}
+.product__cards {
+  display: flex;
+  /* justify-content: center; */
+  gap: 80px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.product__card img {
+  width: 168px;
+  height: 168px;
+  margin-bottom: 30px;
+}
+.product__card-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0c1014;
+  margin-bottom: 5px;
+}
+.product__card-price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #515759;
+  margin-bottom: 12px;
+}
+.product__btn{
+    background: #1890FF;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    outline: 0;
+    padding: 10px 20px;
+}
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal__dialog {
+  max-width: 500px;
+  margin: 40px auto;
+}
+.modal__content {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 30px;
+  color: #000;
+  opacity: 0.5;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}   
+.modal input {
+  display: block;
+  margin: 5px auto ;
+  width: 280px;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 20px;
+  outline: 0;
+}
+.modal button{
+  width: 100%;
+}
+.show{
+   display: block;
+}
+.hide{
+    display: none;
+}

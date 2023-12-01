@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <link rel="stylesheet" href="./src/CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="header__logo">
+                    <img src="./src/Asets/logo.svg" alt="logo">
+                </div>
+                <ul class="header__menu">
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Workout</a></li>
+                    <li><a href="#">Activity</a></li>
+                    <li><a href="#">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="products">
+        <div class="container">
+           <div class="products__content">
+            <div class="products__title">
+                <p class="check__also">Check also</p>
+                <p class="see__al">See all> </p>
+            </div>
+            <div class="product__cards">
+              <!--  <div class="product__card">
+                    <img src="./src/Asets/Airpods.png" alt="Airpods">
+                    <p class="product__card-title">AirPods</p>
+                    <p class="product__card-price">$199.00</p>
+                    <button class="product__btn">Buy</button>
+                </div>  
+                <div class="product__card">
+                    <img src="./src/Asets/Apple card.png" alt="Apple card">
+                    <p class="product__card-title">Apple card</p>
+                    <p class="product__card-price">$299.00</p>
+                    <button class="product__btn">Buy</button>
+                </div>
+                <div class="product__card">
+                    <img src="./src/Asets/Apple tv.png" alt="/Apple tv">
+                    <p class="product__card-title">Apple tv</p>
+                    <p class="product__card-price">$399.00</p>
+                    <button class="product__btn">Buy</button>
+                </div> -->
+                <!-- <div class="product__card">
+                    <img src="./src/Asets/Iphone.png" alt="Iphone.png">
+                    <p class="product__card-title">Iphone.png</p>
+                    <p class="product__card-price">$499.00</p>
+                    <button class="product__btn">Buy</button>
+                </div>  -->
+            </div>
+            <button class="product__btn btn-create" data-modal type="button">Cоздать</button>
+            <button class="product__btn" type="button">Удалить</button>
+            <div class="modal">
+                <div class="modal__dialog">
+                    <div class="modal__content">
+                        <form action="#">
+                            <div data-close class="modal__close">&times;</div>
+                            <input required name="title" type="text" placeholder="Введите название телефона"><br><br>
+                            <input required name="price" type="number" placeholder="Укажите цену"><br><br>
+                            <input required name="memory" type="number" placeholder="Укажите память"><br><br>
+                            <input required name="image" type="text" placeholder="Введите ссылку на картинку"><br><br>
+                            <button class="btn-create product__btn" type="submit">Создать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <script src="./src/JS/main.js"></script>
+</body>
+</html>
